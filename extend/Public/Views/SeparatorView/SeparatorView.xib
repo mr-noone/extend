@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeparatorView">
+            <connections>
+                <outlet property="bottomConstraint" destination="6Mi-j2-ZSR" id="O6J-et-1LN"/>
+                <outlet property="heightConstraint" destination="wkA-n9-w45" id="uJM-uw-QWy"/>
+                <outlet property="leftConstraint" destination="Wlj-Nm-Sy8" id="Fmb-fc-RVK"/>
+                <outlet property="rightConstraint" destination="fxW-Cr-Nq7" id="UkG-Ci-3U6"/>
+                <outlet property="separator" destination="jkv-Yu-fjP" id="Mfn-v9-CmO"/>
+                <outlet property="topConstraint" destination="ai1-cQ-7NZ" id="bik-B0-vEc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZWH-sa-fqg">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkv-Yu-fjP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="139" id="wkA-n9-w45"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jkv-Yu-fjP" secondAttribute="bottom" id="6Mi-j2-ZSR"/>
+                <constraint firstItem="jkv-Yu-fjP" firstAttribute="leading" secondItem="ZWH-sa-fqg" secondAttribute="leading" id="Wlj-Nm-Sy8"/>
+                <constraint firstItem="jkv-Yu-fjP" firstAttribute="top" secondItem="ZWH-sa-fqg" secondAttribute="top" id="ai1-cQ-7NZ"/>
+                <constraint firstAttribute="trailing" secondItem="jkv-Yu-fjP" secondAttribute="trailing" id="fxW-Cr-Nq7"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-32.8125" y="90.625"/>
+        </view>
+    </objects>
+</document>
