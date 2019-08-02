@@ -1,0 +1,12 @@
+//
+//  Debug.xcconfig
+//  extend
+//
+//  Created by Aleksey Zgurskiy on 8/2/19.
+//  Copyright © 2019 mr.noone. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Config.xcconfig"
