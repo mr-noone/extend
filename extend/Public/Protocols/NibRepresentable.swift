@@ -8,13 +8,13 @@
 
 import UIKit
 
-public protocol NibRepresentable where Self: UIView {
+public protocol NibRepresentable {
   static var bundle: Bundle { get }
   static var nibName: String { get }
   static var nib: UINib { get }
 }
 
-public extension NibRepresentable {
+public extension NibRepresentable where Self: NSObject {
   static var bundle: Bundle {
     return Bundle(for: self)
   }

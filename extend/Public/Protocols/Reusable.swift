@@ -8,11 +8,11 @@
 
 import UIKit
 
-public protocol Reusable where Self: UIView {
+public protocol Reusable {
   static var reuseIdentifier: String { get }
 }
 
-public extension Reusable {
+public extension Reusable where Self: NSObject {
   static var reuseIdentifier: String {
     return className
   }
