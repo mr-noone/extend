@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSObject {
+public extension NSObject {
   static var className: String {
     return try! String(describing: self).substringMatches(regex: "[[:word:]]+").first!
   }

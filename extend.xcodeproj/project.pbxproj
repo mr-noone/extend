@@ -85,7 +85,6 @@
 			children = (
 				3FF3001222F425B700007A1E /* extend.h */,
 				3FF3001F22F4278000007A1E /* Public */,
-				3FF3003722F4278000007A1E /* Private */,
 				3FF3001B22F4261100007A1E /* Support Files */,
 			);
 			path = extend;
@@ -118,6 +117,7 @@
 			children = (
 				3FF3002122F4278000007A1E /* UIKit */,
 				3FF3002522F4278000007A1E /* Foundation */,
+				3FF3003922F4278000007A1E /* ObjectiveC */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -203,22 +203,6 @@
 				3FF3003522F4278000007A1E /* Reusable.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		3FF3003722F4278000007A1E /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				3FF3003822F4278000007A1E /* Extensions */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
-		3FF3003822F4278000007A1E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				3FF3003922F4278000007A1E /* ObjectiveC */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3FF3003922F4278000007A1E /* ObjectiveC */ = {
