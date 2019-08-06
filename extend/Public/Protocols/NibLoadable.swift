@@ -12,7 +12,7 @@ public protocol NibLoadable: NibRepresentable {
   func loadNib(_ nib: UINib) -> UIView?
 }
 
-public extension NibLoadable {
+public extension NibLoadable where Self: UIView {
   @discardableResult
   func loadNib(_ nib: UINib) -> UIView? {
     guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView
@@ -32,5 +32,12 @@ public extension NibLoadable {
     ])
     
     return view
+  }
+}
+
+public extension NibLoadable where Self: UIViewController {
+  @discardableResult
+  func loadNib(_ nib: UINib) -> UIView? {
+    return nib.instantiate(withOwner: self, options: nil).first as? UIView
   }
 }
