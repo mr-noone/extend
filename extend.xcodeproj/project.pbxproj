@@ -92,7 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				3FF3001222F425B700007A1E /* extend.h */,
-				3FF3001F22F4278000007A1E /* Public */,
+				3FF3003322F4278000007A1E /* Protocols */,
+				3FF3002022F4278000007A1E /* Extensions */,
+				3FF3002722F4278000007A1E /* Controllers */,
+				3FF3002922F4278000007A1E /* Views */,
 				3FF3001B22F4261100007A1E /* Support Files */,
 			);
 			path = extend;
@@ -107,17 +110,6 @@
 				3FF3001322F425B700007A1E /* Info.plist */,
 			);
 			path = "Support Files";
-			sourceTree = "<group>";
-		};
-		3FF3001F22F4278000007A1E /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				3FF3003322F4278000007A1E /* Protocols */,
-				3FF3002022F4278000007A1E /* Extensions */,
-				3FF3002722F4278000007A1E /* Controllers */,
-				3FF3002922F4278000007A1E /* Views */,
-			);
-			path = Public;
 			sourceTree = "<group>";
 		};
 		3FF3002022F4278000007A1E /* Extensions */ = {
