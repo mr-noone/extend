@@ -32,7 +32,7 @@ open class GradientView: UIView {
       let ctx = UIGraphicsGetCurrentContext(),
       let gradient = gradient,
       let cgGradient = gradient.cgGradient
-      else { return }
+    else { return }
     
     let options: CGGradientDrawingOptions = [
       .drawsBeforeStartLocation,
