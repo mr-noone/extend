@@ -30,19 +30,19 @@ public extension UIView {
     set { layer.shadowColor = newValue?.cgColor }
   }
   
-  private var shadowRadius: Float {
+  private var shadowRadius: Float? {
     get { return Float(layer.shadowRadius) }
-    set { layer.shadowRadius = CGFloat(newValue) }
+    set { layer.shadowRadius = CGFloat(newValue ?? 0) }
   }
   
-  private var shadowOpacity: Float {
+  private var shadowOpacity: Float? {
     get { return layer.shadowOpacity }
-    set { layer.shadowOpacity = newValue }
+    set { layer.shadowOpacity = newValue ?? 0 }
   }
   
-  private var shadowOffset: CGPoint {
+  private var shadowOffset: CGPoint? {
     get { return CGPoint(x: layer.shadowOffset.width, y: layer.shadowOffset.height) }
-    set { layer.shadowOffset = CGSize(width: newValue.x, height: newValue.y) }
+    set { layer.shadowOffset = CGSize(width: newValue?.x ?? 0, height: newValue?.y ?? 0) }
   }
   
   private var shadowPath: CGPath? {
@@ -50,8 +50,16 @@ public extension UIView {
     set { layer.shadowPath = newValue }
   }
   
-  var shadow: Shadow {
+  var shadow: Shadow? {
     get {
+      guard
+        let shadowRadius = shadowRadius,
+        let shadowOpacity = shadowOpacity,
+        let shadowOffset = shadowOffset
+      else {
+        return nil
+      }
+      
       return Shadow(color: shadowColor,
                     radius: shadowRadius,
                     opacity: shadowOpacity,
@@ -59,11 +67,11 @@ public extension UIView {
                     path: shadowPath)
     }
     set {
-      shadowColor = newValue.color
-      shadowRadius = newValue.radius
-      shadowOpacity = newValue.opacity
-      shadowOffset = newValue.offset
-      shadowPath = newValue.path
+      shadowColor = newValue?.color
+      shadowRadius = newValue?.radius
+      shadowOpacity = newValue?.opacity
+      shadowOffset = newValue?.offset
+      shadowPath = newValue?.path
     }
   }
 }
