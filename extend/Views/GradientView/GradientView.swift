@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-open class GradientView: UIView {
+open class GradientView: UIView, IBDrawable {
   open var gradient: Gradient? = nil {
     didSet { setNeedsDisplay() }
   }
@@ -27,6 +27,11 @@ open class GradientView: UIView {
     self.gradient = gradient
   }
   
+  open override func prepareForInterfaceBuilder() {
+    drawForInterfaceBuilder()
+  }
+  
+  #if !TARGET_INTERFACE_BUILDER
   open override func draw(_ rect: CGRect) {
     guard
       let ctx = UIGraphicsGetCurrentContext(),
@@ -61,4 +66,5 @@ open class GradientView: UIView {
                              options: options)
     }
   }
+  #endif
 }
