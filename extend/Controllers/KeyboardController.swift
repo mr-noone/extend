@@ -11,6 +11,8 @@ import UIKit
 @objc public protocol KeyboardControllerDelegate {
   @objc optional func keyboardWillShow(_ userInfo: [AnyHashable : Any])
   @objc optional func keyboardWillHide(_ userInfo: [AnyHashable : Any])
+  @objc optional func keyboardDidShow(_ userInfo: [AnyHashable : Any])
+  @objc optional func keyboardDidHide(_ userInfo: [AnyHashable : Any])
 }
 
 public class KeyboardController: NSObject {
@@ -35,6 +37,8 @@ public class KeyboardController: NSObject {
     let center = NotificationCenter.default
     center.addObserver(self, selector: sel, name: UIView.keyboardWillShowNotification, object: nil)
     center.addObserver(self, selector: sel, name: UIView.keyboardWillHideNotification, object: nil)
+    center.addObserver(self, selector: sel, name: UIView.keyboardDidShowNotification, object: nil)
+    center.addObserver(self, selector: sel, name: UIView.keyboardDidHideNotification, object: nil)
   }
   
   deinit {
@@ -57,6 +61,10 @@ public class KeyboardController: NSObject {
     case UIView.keyboardWillHideNotification:
       delegate?.keyboardWillHide?(userInfo)
       inset = defaultInset
+    case UIView.keyboardDidShowNotification:
+      delegate?.keyboardDidShow?(userInfo)
+    case UIView.keyboardDidHideNotification:
+      delegate?.keyboardDidHide?(userInfo)
     default:
       return
     }

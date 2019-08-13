@@ -38,6 +38,10 @@ public extension NibLoadable where Self: UIView {
 public extension NibLoadable where Self: UIViewController {
   @discardableResult
   func loadNib(_ nib: UINib) -> UIView? {
-    return nib.instantiate(withOwner: self, options: nil).first as? UIView
+    guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView
+    else { return nil }
+    
+    self.view = view
+    return view
   }
 }
