@@ -12,22 +12,30 @@ open class NibView: UIView, NibLoadable {
   public override init(frame: CGRect) {
     super.init(frame: frame)
     loadNib(type(of: self).nib)
+    viewDidInit()
   }
   
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     loadNib(type(of: self).nib)
+    viewDidInit()
   }
+  
+  open func viewDidInit() {}
 }
 
 open class NibControl: UIControl, NibLoadable {
   public override init(frame: CGRect) {
     super.init(frame: frame)
     loadNib(type(of: self).nib)
+    viewDidInit()
   }
   
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     loadNib(type(of: self).nib)
+    viewDidInit()
   }
+  
+  open func viewDidInit() {}
 }

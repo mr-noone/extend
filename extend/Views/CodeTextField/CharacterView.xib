@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterView" customModule="Extend" customModuleProvider="target">
+            <connections>
+                <outlet property="characterLabel" destination="hhe-NA-l19" id="jce-vk-HnQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="x88-qb-64T">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhe-NA-l19">
+                    <rect key="frame" x="166.66666666666666" y="101" width="41.666666666666657" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hhe-NA-l19" secondAttribute="bottom" id="5hq-8M-eSV"/>
+                <constraint firstItem="hhe-NA-l19" firstAttribute="centerY" secondItem="x88-qb-64T" secondAttribute="centerY" id="EZr-Vq-Onm"/>
+                <constraint firstItem="hhe-NA-l19" firstAttribute="top" relation="greaterThanOrEqual" secondItem="x88-qb-64T" secondAttribute="top" id="PCR-Pc-vM7"/>
+                <constraint firstItem="hhe-NA-l19" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x88-qb-64T" secondAttribute="leading" id="cXL-KC-88p"/>
+                <constraint firstItem="hhe-NA-l19" firstAttribute="centerX" secondItem="x88-qb-64T" secondAttribute="centerX" id="orM-m6-PV2"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hhe-NA-l19" secondAttribute="trailing" id="vLU-AH-tAf"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="109.59999999999999" y="291.87192118226602"/>
+        </view>
+    </objects>
+</document>

@@ -30,6 +30,10 @@
 		3FF3004622F4278000007A1E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003522F4278000007A1E /* Reusable.swift */; };
 		3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003622F4278000007A1E /* NibLoadable.swift */; };
 		3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */; };
+		E2B7C4682302B71A0033E8D6 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7C4672302B71A0033E8D6 /* CharacterView.swift */; };
+		E2B7C46A2302B72A0033E8D6 /* CharacterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B7C4692302B72A0033E8D6 /* CharacterView.xib */; };
+		E2B7C46C2302C47B0033E8D6 /* CodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7C46B2302C47B0033E8D6 /* CodeTextField.swift */; };
+		E2B7C46E2302C4860033E8D6 /* CodeTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B7C46D2302C4860033E8D6 /* CodeTextField.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,10 @@
 		3FF3003522F4278000007A1E /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		3FF3003622F4278000007A1E /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		E2B7C4672302B71A0033E8D6 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		E2B7C4692302B72A0033E8D6 /* CharacterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterView.xib; sourceTree = "<group>"; };
+		E2B7C46B2302C47B0033E8D6 /* CodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
+		E2B7C46D2302C4860033E8D6 /* CodeTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeTextField.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +165,7 @@
 		3FF3002922F4278000007A1E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E2B7C4662302B6F80033E8D6 /* CodeTextField */,
 				3FF3003122F4278000007A1E /* GradientView */,
 				3FF3002D22F4278000007A1E /* NibView */,
 				3FF3002A22F4278000007A1E /* SeparatorView */,
@@ -218,6 +227,17 @@
 				3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */,
 			);
 			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		E2B7C4662302B6F80033E8D6 /* CodeTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E2B7C4672302B71A0033E8D6 /* CharacterView.swift */,
+				E2B7C4692302B72A0033E8D6 /* CharacterView.xib */,
+				E2B7C46B2302C47B0033E8D6 /* CodeTextField.swift */,
+				E2B7C46D2302C4860033E8D6 /* CodeTextField.xib */,
+			);
+			path = CodeTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +308,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B7C46A2302B72A0033E8D6 /* CharacterView.xib in Resources */,
+				E2B7C46E2302C4860033E8D6 /* CodeTextField.xib in Resources */,
 				3FF3004122F4278000007A1E /* SeparatorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +325,7 @@
 				3FF3004022F4278000007A1E /* SeparatorView.swift in Sources */,
 				3FF3004622F4278000007A1E /* Reusable.swift in Sources */,
 				3FF3003B22F4278000007A1E /* UIColor+Hex.swift in Sources */,
+				E2B7C4682302B71A0033E8D6 /* CharacterView.swift in Sources */,
 				3FF3003C22F4278000007A1E /* UIView+Round.swift in Sources */,
 				3F96890D22F81C3000781E72 /* GradienType.swift in Sources */,
 				3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */,
@@ -311,6 +334,7 @@
 				3F96891122F81C5E00781E72 /* Gradient.swift in Sources */,
 				3F96891D22F8235900781E72 /* UITableView+Register.swift in Sources */,
 				3FF3003F22F4278000007A1E /* KeyboardController.swift in Sources */,
+				E2B7C46C2302C47B0033E8D6 /* CodeTextField.swift in Sources */,
 				3FF3003E22F4278000007A1E /* String+Regex.swift in Sources */,
 				3FF3003D22F4278000007A1E /* UINavigationItem+BackTitle.swift in Sources */,
 				3F96892222F83C2400781E72 /* UIView+Shadow.swift in Sources */,
