@@ -20,10 +20,10 @@ import UIKit
 }
 
 @IBDesignable
-open class CodeTextField: NibControl {
+open class CodeTextField: NibControl, UITextInputTraits {
   // MARK: - Outlets
   
-  @IBOutlet weak var delegate: CodeTextFieldDelegate?
+  @IBOutlet weak open var delegate: CodeTextFieldDelegate?
   
   @IBOutlet private var stackView: UIStackView! {
     didSet {
@@ -35,6 +35,11 @@ open class CodeTextField: NibControl {
   }
   
   // MARK: - Properties
+  
+  open var keyboardType: UIKeyboardType = .default
+  open var keyboardAppearance: UIKeyboardAppearance = .default
+  open var returnKeyType: UIReturnKeyType = .default
+  open var textContentType: UITextContentType! = .none
   
   open override var tintColor: UIColor! {
     didSet { characterViews.forEach { $0.tintColor = tintColor } }
@@ -200,12 +205,14 @@ extension CodeTextField: UIKeyInput {
     if text.trimmingCharacters(in: .newlines).isEmpty && delegate?.textFieldShouldReturn?(self) ?? true {
       _ = resignFirstResponder()
     } else if delegate?.textField?(self, shouldEnter: text) ?? true {
+      menu.setMenuVisible(false, animated: true)
       self.text += text
     }
   }
   
   public func deleteBackward() {
     guard hasText else { return }
+    menu.setMenuVisible(false, animated: true)
     text?.removeLast()
   }
 }
