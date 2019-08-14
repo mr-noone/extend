@@ -14,6 +14,7 @@
 		3F96891F22F8253700781E72 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96891E22F8253700781E72 /* UITableView+Dequeue.swift */; };
 		3F96892222F83C2400781E72 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96892122F83C2400781E72 /* UIView+Shadow.swift */; };
 		3FA3188F2303F73300C71245 /* CharacterSet+Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3188E2303F73300C71245 /* CharacterSet+Sets.swift */; };
+		3FA3189D23044AE800C71245 /* String+Separated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3189C23044AE800C71245 /* String+Separated.swift */; };
 		3FA5EE2C22FDAA9200750ED0 /* IBDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA5EE2B22FDAA9200750ED0 /* IBDrawable.swift */; };
 		3FA85F7F22FD6F7C00734670 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA85F7E22FD6F7C00734670 /* UIView+Border.swift */; };
 		3FF3001422F425B700007A1E /* extend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FF3001222F425B700007A1E /* extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +46,7 @@
 		3F96891E22F8253700781E72 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
 		3F96892122F83C2400781E72 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		3FA3188E2303F73300C71245 /* CharacterSet+Sets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Sets.swift"; sourceTree = "<group>"; };
+		3FA3189C23044AE800C71245 /* String+Separated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Separated.swift"; sourceTree = "<group>"; };
 		3FA5EE2B22FDAA9200750ED0 /* IBDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDrawable.swift; sourceTree = "<group>"; };
 		3FA85F7E22FD6F7C00734670 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		3FF3000F22F425B700007A1E /* Extend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 			children = (
 				3FA3188E2303F73300C71245 /* CharacterSet+Sets.swift */,
 				3FF3002622F4278000007A1E /* String+Regex.swift */,
+				3FA3189C23044AE800C71245 /* String+Separated.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			files = (
 				3F96891F22F8253700781E72 /* UITableView+Dequeue.swift in Sources */,
 				3FF3004022F4278000007A1E /* SeparatorView.swift in Sources */,
+				3FA3189D23044AE800C71245 /* String+Separated.swift in Sources */,
 				3FF3004622F4278000007A1E /* Reusable.swift in Sources */,
 				3FA3188F2303F73300C71245 /* CharacterSet+Sets.swift in Sources */,
 				3FF3003B22F4278000007A1E /* UIColor+Hex.swift in Sources */,
