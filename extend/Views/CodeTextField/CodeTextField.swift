@@ -20,10 +20,10 @@ import UIKit
 }
 
 @IBDesignable
-open class CodeTextField: NibControl {
+open class CodeTextField: NibControl, UITextInputTraits {
   // MARK: - Outlets
   
-  @IBOutlet weak var delegate: CodeTextFieldDelegate?
+  @IBOutlet weak open var delegate: CodeTextFieldDelegate?
   
   @IBOutlet private var stackView: UIStackView! {
     didSet {
@@ -35,6 +35,11 @@ open class CodeTextField: NibControl {
   }
   
   // MARK: - Properties
+  
+  open var keyboardType: UIKeyboardType = .default
+  open var keyboardAppearance: UIKeyboardAppearance = .default
+  open var returnKeyType: UIReturnKeyType = .default
+  open var textContentType: UITextContentType! = .none
   
   open override var tintColor: UIColor! {
     didSet { characterViews.forEach { $0.tintColor = tintColor } }
@@ -149,7 +154,7 @@ private extension CodeTextField {
   private var menu: UIMenuController {
     get {
       let menu = UIMenuController.shared
-      menu.setTargetRect(CGRect.zero, in: self)
+      menu.setTargetRect(bounds, in: self)
       return menu
     }
   }
@@ -167,7 +172,8 @@ private extension CodeTextField {
         _ = becomeFirstResponder()
       }
     case (.ended, true):
-      menu.setMenuVisible(true, animated: true)
+      menu.setMenuVisible(!menu.isMenuVisible, animated: true)
+      
     default:
       break
     }
@@ -175,7 +181,7 @@ private extension CodeTextField {
   
   func updateCharacterViews() {
     stackView.arrangedSubviews.forEach {
-      stackView.removeArrangedSubview($0)
+      $0.removeFromSuperview()
     }
     
     for _ in 0..<characterLimits {
@@ -200,12 +206,117 @@ extension CodeTextField: UIKeyInput {
     if text.trimmingCharacters(in: .newlines).isEmpty && delegate?.textFieldShouldReturn?(self) ?? true {
       _ = resignFirstResponder()
     } else if delegate?.textField?(self, shouldEnter: text) ?? true {
+      menu.setMenuVisible(false, animated: true)
       self.text += text
     }
   }
   
   public func deleteBackward() {
     guard hasText else { return }
+    menu.setMenuVisible(false, animated: true)
     text?.removeLast()
+  }
+}
+
+// MARK: - UITextInput
+
+extension CodeTextField: UITextInput {
+  public func replace(_ range: UITextRange, withText text: String) {}
+  
+  public var selectedTextRange: UITextRange? {
+    get { return nil }
+    set(selectedTextRange) {}
+  }
+  
+  public var markedTextRange: UITextRange? {
+    return nil
+  }
+  
+  public var markedTextStyle: [NSAttributedString.Key : Any]? {
+    get { return nil }
+    set(markedTextStyle) {}
+  }
+  
+  public func setMarkedText(_ markedText: String?, selectedRange: NSRange) {}
+  
+  public func unmarkText() {}
+  
+  public var beginningOfDocument: UITextPosition {
+    return UITextPosition()
+  }
+  
+  public var endOfDocument: UITextPosition {
+    return UITextPosition()
+  }
+  
+  public func textRange(from fromPosition: UITextPosition, to toPosition: UITextPosition) -> UITextRange? {
+    return nil
+  }
+  
+  public func position(from position: UITextPosition, offset: Int) -> UITextPosition? {
+    return nil
+  }
+  
+  public func position(from position: UITextPosition, in direction: UITextLayoutDirection, offset: Int) -> UITextPosition? {
+    return nil
+  }
+  
+  public func compare(_ position: UITextPosition, to other: UITextPosition) -> ComparisonResult {
+    return ComparisonResult.orderedSame
+  }
+  
+  public func offset(from: UITextPosition, to toPosition: UITextPosition) -> Int {
+    return 0
+  }
+  
+  public var inputDelegate: UITextInputDelegate? {
+    get { return nil }
+    set(inputDelegate) {}
+  }
+  
+  public var tokenizer: UITextInputTokenizer {
+    return UITextInputStringTokenizer(textInput: self)
+  }
+  
+  public func position(within range: UITextRange, farthestIn direction: UITextLayoutDirection) -> UITextPosition? {
+    return nil
+  }
+  
+  public func characterRange(byExtending position: UITextPosition, in direction: UITextLayoutDirection) -> UITextRange? {
+    return nil
+  }
+  
+  public func baseWritingDirection(for position: UITextPosition, in direction: UITextStorageDirection) -> UITextWritingDirection {
+    return UITextWritingDirection.natural
+  }
+  
+  public func setBaseWritingDirection(_ writingDirection: UITextWritingDirection, for range: UITextRange) {}
+  
+  public func firstRect(for range: UITextRange) -> CGRect {
+    return .zero
+  }
+  
+  public func caretRect(for position: UITextPosition) -> CGRect {
+    return .zero
+  }
+  
+  public func selectionRects(for range: UITextRange) -> [UITextSelectionRect] {
+    return []
+  }
+  
+  public func closestPosition(to point: CGPoint) -> UITextPosition? {
+    return nil
+  }
+  
+  public func closestPosition(to point: CGPoint, within range: UITextRange) -> UITextPosition? {
+    return nil
+  }
+  
+  public func characterRange(at point: CGPoint) -> UITextRange? {
+    return nil
+  }
+  
+  public func text(in range: UITextRange) -> String? {
+    return nil
   }
 }

@@ -72,6 +72,8 @@ class CharacterView: NibView {
   }
   
   override func didMoveToWindow() {
+    widthConstraint.priority = UILayoutPriority(999)
+    heightConstraint.priority = UILayoutPriority(999)
     widthConstraint.isActive = true
     heightConstraint.isActive = true
   }
