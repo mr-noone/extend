@@ -154,7 +154,7 @@ private extension CodeTextField {
   private var menu: UIMenuController {
     get {
       let menu = UIMenuController.shared
-      menu.setTargetRect(CGRect.zero, in: self)
+      menu.setTargetRect(bounds, in: self)
       return menu
     }
   }
@@ -172,7 +172,8 @@ private extension CodeTextField {
         _ = becomeFirstResponder()
       }
     case (.ended, true):
-      menu.setMenuVisible(true, animated: true)
+      menu.setMenuVisible(!menu.isMenuVisible, animated: true)
+      
     default:
       break
     }
