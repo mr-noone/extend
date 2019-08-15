@@ -180,7 +180,7 @@ private extension CodeTextField {
   
   func updateCharacterViews() {
     stackView.arrangedSubviews.forEach {
-      stackView.removeArrangedSubview($0)
+      $0.removeFromSuperview()
     }
     
     for _ in 0..<characterLimits {
@@ -214,5 +214,108 @@ extension CodeTextField: UIKeyInput {
     guard hasText else { return }
     menu.setMenuVisible(false, animated: true)
     text?.removeLast()
+  }
+}
+
+// MARK: - UITextInput
+
+extension CodeTextField: UITextInput {
+  public func replace(_ range: UITextRange, withText text: String) {}
+  
+  public var selectedTextRange: UITextRange? {
+    get { return nil }
+    set(selectedTextRange) {}
+  }
+  
+  public var markedTextRange: UITextRange? {
+    return nil
+  }
+  
+  public var markedTextStyle: [NSAttributedString.Key : Any]? {
+    get { return nil }
+    set(markedTextStyle) {}
+  }
+  
+  public func setMarkedText(_ markedText: String?, selectedRange: NSRange) {}
+  
+  public func unmarkText() {}
+  
+  public var beginningOfDocument: UITextPosition {
+    return UITextPosition()
+  }
+  
+  public var endOfDocument: UITextPosition {
+    return UITextPosition()
+  }
+  
+  public func textRange(from fromPosition: UITextPosition, to toPosition: UITextPosition) -> UITextRange? {
+    return nil
+  }
+  
+  public func position(from position: UITextPosition, offset: Int) -> UITextPosition? {
+    return nil
+  }
+  
+  public func position(from position: UITextPosition, in direction: UITextLayoutDirection, offset: Int) -> UITextPosition? {
+    return nil
+  }
+  
+  public func compare(_ position: UITextPosition, to other: UITextPosition) -> ComparisonResult {
+    return ComparisonResult.orderedSame
+  }
+  
+  public func offset(from: UITextPosition, to toPosition: UITextPosition) -> Int {
+    return 0
+  }
+  
+  public var inputDelegate: UITextInputDelegate? {
+    get { return nil }
+    set(inputDelegate) {}
+  }
+  
+  public var tokenizer: UITextInputTokenizer {
+    return UITextInputStringTokenizer(textInput: self)
+  }
+  
+  public func position(within range: UITextRange, farthestIn direction: UITextLayoutDirection) -> UITextPosition? {
+    return nil
+  }
+  
+  public func characterRange(byExtending position: UITextPosition, in direction: UITextLayoutDirection) -> UITextRange? {
+    return nil
+  }
+  
+  public func baseWritingDirection(for position: UITextPosition, in direction: UITextStorageDirection) -> UITextWritingDirection {
+    return UITextWritingDirection.natural
+  }
+  
+  public func setBaseWritingDirection(_ writingDirection: UITextWritingDirection, for range: UITextRange) {}
+  
+  public func firstRect(for range: UITextRange) -> CGRect {
+    return .zero
+  }
+  
+  public func caretRect(for position: UITextPosition) -> CGRect {
+    return .zero
+  }
+  
+  public func selectionRects(for range: UITextRange) -> [UITextSelectionRect] {
+    return []
+  }
+  
+  public func closestPosition(to point: CGPoint) -> UITextPosition? {
+    return nil
+  }
+  
+  public func closestPosition(to point: CGPoint, within range: UITextRange) -> UITextPosition? {
+    return nil
+  }
+  
+  public func characterRange(at point: CGPoint) -> UITextRange? {
+    return nil
+  }
+  
+  public func text(in range: UITextRange) -> String? {
+    return nil
   }
 }
