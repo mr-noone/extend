@@ -27,13 +27,13 @@ open class NibView: UIView, NibLoadable {
 open class NibControl: UIControl, NibLoadable {
   public override init(frame: CGRect) {
     super.init(frame: frame)
-    loadNib(type(of: self).nib)
+    loadNib(type(of: self).nib)?.isUserInteractionEnabled = false
     viewDidInit()
   }
   
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    loadNib(type(of: self).nib)
+    loadNib(type(of: self).nib)?.isUserInteractionEnabled = false
     viewDidInit()
   }
   
