@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A58D19230C29700068EC35 /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A58D18230C29700068EC35 /* UICollectionView+Register.swift */; };
+		14A58D1B230C29890068EC35 /* UICollectionView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A58D1A230C29890068EC35 /* UICollectionView+Dequeue.swift */; };
 		3F96890D22F81C3000781E72 /* GradienType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96890C22F81C3000781E72 /* GradienType.swift */; };
 		3F96890F22F81C4500781E72 /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96890E22F81C4500781E72 /* GradientDirection.swift */; };
 		3F96891122F81C5E00781E72 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96891022F81C5E00781E72 /* Gradient.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14A58D18230C29700068EC35 /* UICollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
+		14A58D1A230C29890068EC35 /* UICollectionView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeue.swift"; sourceTree = "<group>"; };
 		3F96890C22F81C3000781E72 /* GradienType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradienType.swift; sourceTree = "<group>"; };
 		3F96890E22F81C4500781E72 /* GradientDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDirection.swift; sourceTree = "<group>"; };
 		3F96891022F81C5E00781E72 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 				3FF3002422F4278000007A1E /* UINavigationItem+BackTitle.swift */,
 				3F96891E22F8253700781E72 /* UITableView+Dequeue.swift */,
 				3F96891C22F8235900781E72 /* UITableView+Register.swift */,
+				14A58D18230C29700068EC35 /* UICollectionView+Register.swift */,
+				14A58D1A230C29890068EC35 /* UICollectionView+Dequeue.swift */,
 				3FA85F7E22FD6F7C00734670 /* UIView+Border.swift */,
 				3FF3002322F4278000007A1E /* UIView+Round.swift */,
 				3F96892122F83C2400781E72 /* UIView+Shadow.swift */,
@@ -342,6 +348,7 @@
 				3F96891122F81C5E00781E72 /* Gradient.swift in Sources */,
 				3F96891D22F8235900781E72 /* UITableView+Register.swift in Sources */,
 				3FF3003F22F4278000007A1E /* KeyboardController.swift in Sources */,
+				14A58D19230C29700068EC35 /* UICollectionView+Register.swift in Sources */,
 				E2B7C46C2302C47B0033E8D6 /* CodeTextField.swift in Sources */,
 				3FF3003E22F4278000007A1E /* String+Regex.swift in Sources */,
 				3FF3003D22F4278000007A1E /* UINavigationItem+BackTitle.swift in Sources */,
@@ -350,6 +357,7 @@
 				3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */,
 				3F96890F22F81C4500781E72 /* GradientDirection.swift in Sources */,
 				3FF3004522F4278000007A1E /* NibRepresentable.swift in Sources */,
+				14A58D1B230C29890068EC35 /* UICollectionView+Dequeue.swift in Sources */,
 				3FA5EE2C22FDAA9200750ED0 /* IBDrawable.swift in Sources */,
 				3FF3004422F4278000007A1E /* GradientView.swift in Sources */,
 			);
