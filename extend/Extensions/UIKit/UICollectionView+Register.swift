@@ -9,11 +9,11 @@
 import UIKit
 
 public extension UICollectionView {
-  func register<T: UICollectionViewCell & Reusable>(_ aClass: T.Type, for identifire: String = T.reuseIdentifier) {
+  func register<T: UICollectionViewCell & Reusable>(_ aClass: T.Type, for identifier: String = T.reuseIdentifier) {
     if let aClass = aClass as? NibRepresentable.Type {
-      register(aClass.nib, forCellWithReuseIdentifier: identifire)
+      register(aClass.nib, forCellWithReuseIdentifier: identifier)
     } else {
-      register(aClass, forCellWithReuseIdentifier: identifire)
+      register(aClass, forCellWithReuseIdentifier: identifier)
     }
   }
 }
