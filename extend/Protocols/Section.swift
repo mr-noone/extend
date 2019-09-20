@@ -9,9 +9,12 @@
 import Foundation
 
 public protocol Section {
+  associatedtype Header
+  associatedtype Footer
   associatedtype Item
-  var header: String? { get set }
-  var footer: String? { get set }
+  
+  var header: Header? { get set }
+  var footer: Footer? { get set }
   var items: [Item] { get set }
 }
 
