@@ -10,6 +10,9 @@
 		143677A32320002400AE58AB /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143677A22320002400AE58AB /* Then.swift */; };
 		14A58D19230C29700068EC35 /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A58D18230C29700068EC35 /* UICollectionView+Register.swift */; };
 		14A58D1B230C29890068EC35 /* UICollectionView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A58D1A230C29890068EC35 /* UICollectionView+Dequeue.swift */; };
+		3F3BC0AC2338D14C0029BEB0 /* CGRect+Offsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3BC0AB2338D14C0029BEB0 /* CGRect+Offsets.swift */; };
+		3F3BC0B22338F9160029BEB0 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3BC0B12338F9160029BEB0 /* TextView.swift */; };
+		3F8397472317B5C300F184E1 /* UIControl+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8397462317B5C300F184E1 /* UIControl+Closure.swift */; };
 		3F96890D22F81C3000781E72 /* GradienType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96890C22F81C3000781E72 /* GradienType.swift */; };
 		3F96890F22F81C4500781E72 /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96890E22F81C4500781E72 /* GradientDirection.swift */; };
 		3F96891122F81C5E00781E72 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96891022F81C5E00781E72 /* Gradient.swift */; };
@@ -38,6 +41,7 @@
 		3FF3004622F4278000007A1E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003522F4278000007A1E /* Reusable.swift */; };
 		3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003622F4278000007A1E /* NibLoadable.swift */; };
 		3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */; };
+		3FFEC816233A12FF0080DF45 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */; };
 		E2B7C4682302B71A0033E8D6 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7C4672302B71A0033E8D6 /* CharacterView.swift */; };
 		E2B7C46A2302B72A0033E8D6 /* CharacterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B7C4692302B72A0033E8D6 /* CharacterView.xib */; };
 		E2B7C46C2302C47B0033E8D6 /* CodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7C46B2302C47B0033E8D6 /* CodeTextField.swift */; };
@@ -48,6 +52,9 @@
 		143677A22320002400AE58AB /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		14A58D18230C29700068EC35 /* UICollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
 		14A58D1A230C29890068EC35 /* UICollectionView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeue.swift"; sourceTree = "<group>"; };
+		3F3BC0AB2338D14C0029BEB0 /* CGRect+Offsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Offsets.swift"; sourceTree = "<group>"; };
+		3F3BC0B12338F9160029BEB0 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		3F8397462317B5C300F184E1 /* UIControl+Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Closure.swift"; sourceTree = "<group>"; };
 		3F96890C22F81C3000781E72 /* GradienType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradienType.swift; sourceTree = "<group>"; };
 		3F96890E22F81C4500781E72 /* GradientDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDirection.swift; sourceTree = "<group>"; };
 		3F96891022F81C5E00781E72 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
@@ -81,6 +88,7 @@
 		3FF3003522F4278000007A1E /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		3FF3003622F4278000007A1E /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
 		E2B7C4672302B71A0033E8D6 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		E2B7C4692302B72A0033E8D6 /* CharacterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterView.xib; sourceTree = "<group>"; };
 		E2B7C46B2302C47B0033E8D6 /* CodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
@@ -98,6 +106,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3BC0AA2338D1290029BEB0 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				3F3BC0AB2338D14C0029BEB0 /* CGRect+Offsets.swift */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		3F3BC0B02338F9030029BEB0 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				3F3BC0B12338F9160029BEB0 /* TextView.swift */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
 		3FF3000522F425B700007A1E = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				3FF3002122F4278000007A1E /* UIKit */,
+				3F3BC0AA2338D1290029BEB0 /* CoreGraphics */,
 				3FF3002522F4278000007A1E /* Foundation */,
 				3FF3003922F4278000007A1E /* ObjectiveC */,
 			);
@@ -158,6 +183,7 @@
 				3FF3002422F4278000007A1E /* UINavigationItem+BackTitle.swift */,
 				3F96891E22F8253700781E72 /* UITableView+Dequeue.swift */,
 				3F96891C22F8235900781E72 /* UITableView+Register.swift */,
+				3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */,
 				3FA85F7E22FD6F7C00734670 /* UIView+Border.swift */,
 				3FF3002322F4278000007A1E /* UIView+Round.swift */,
 				3F96892122F83C2400781E72 /* UIView+Shadow.swift */,
@@ -191,6 +217,7 @@
 				3FF3002D22F4278000007A1E /* NibView */,
 				3FF3002A22F4278000007A1E /* SeparatorView */,
 				3FF3002F22F4278000007A1E /* TextField */,
+				3F3BC0B02338F9030029BEB0 /* TextView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,11 +378,13 @@
 				3FF3004022F4278000007A1E /* SeparatorView.swift in Sources */,
 				3FA3189D23044AE800C71245 /* String+Separated.swift in Sources */,
 				3FF3004622F4278000007A1E /* Reusable.swift in Sources */,
+				3F3BC0AC2338D14C0029BEB0 /* CGRect+Offsets.swift in Sources */,
 				3FA3188F2303F73300C71245 /* CharacterSet+Sets.swift in Sources */,
 				3FF3003B22F4278000007A1E /* UIColor+Hex.swift in Sources */,
 				143677A32320002400AE58AB /* Then.swift in Sources */,
 				E2B7C4682302B71A0033E8D6 /* CharacterView.swift in Sources */,
 				3FF3003C22F4278000007A1E /* UIView+Round.swift in Sources */,
+				3F3BC0B22338F9160029BEB0 /* TextView.swift in Sources */,
 				3F96890D22F81C3000781E72 /* GradienType.swift in Sources */,
 				3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */,
 				3FF3004322F4278000007A1E /* TextField.swift in Sources */,
@@ -372,6 +401,7 @@
 				3FF3004222F4278000007A1E /* NibView.swift in Sources */,
 				3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */,
 				3F96890F22F81C4500781E72 /* GradientDirection.swift in Sources */,
+				3FFEC816233A12FF0080DF45 /* UITextView+NumberOfLines.swift in Sources */,
 				3FF3004522F4278000007A1E /* NibRepresentable.swift in Sources */,
 				14A58D1B230C29890068EC35 /* UICollectionView+Dequeue.swift in Sources */,
 				3FA5EE2C22FDAA9200750ED0 /* IBDrawable.swift in Sources */,
