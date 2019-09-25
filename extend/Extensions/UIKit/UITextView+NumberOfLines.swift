@@ -20,9 +20,9 @@ public extension UITextView {
       numberOfLines += 1
     }
     
-    if let char = text.last, String(char).rangeOfCharacter(from: .newlines) != nil {
+    if let char = text?.last, String(char).rangeOfCharacter(from: .newlines) != nil {
       numberOfLines += 1
-    } else if text.isEmpty {
+    } else if text?.isEmpty ?? true {
       numberOfLines += 1
     }
     

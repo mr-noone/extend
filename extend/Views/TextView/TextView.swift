@@ -73,9 +73,9 @@ open class TextView: UITextView {
     }
   }
   
-  // MARK: - Private
+  // MARK: - Notification handlers
   
-  @objc private func textDidChange(_ notification: Notification) {
+  @objc open func textDidChange(_ notification: Notification) {
     setNeedsDisplay()
   }
 }
