@@ -25,6 +25,7 @@
 		3FA5EE2C22FDAA9200750ED0 /* IBDrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA5EE2B22FDAA9200750ED0 /* IBDrawable.swift */; };
 		3FA85F7F22FD6F7C00734670 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA85F7E22FD6F7C00734670 /* UIView+Border.swift */; };
 		3FBA6A67233B7BEC00CF7BA1 /* ClosureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96BE202333B13B00AB9282 /* ClosureAction.swift */; };
+		3FBA6A6A233BA87D00CF7BA1 /* NSAttributedString+Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA6A69233BA87D00CF7BA1 /* NSAttributedString+Attachment.swift */; };
 		3FF3001422F425B700007A1E /* extend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FF3001222F425B700007A1E /* extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FF3003B22F4278000007A1E /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3002222F4278000007A1E /* UIColor+Hex.swift */; };
 		3FF3003C22F4278000007A1E /* UIView+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3002322F4278000007A1E /* UIView+Round.swift */; };
@@ -66,6 +67,7 @@
 		3FA3189C23044AE800C71245 /* String+Separated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Separated.swift"; sourceTree = "<group>"; };
 		3FA5EE2B22FDAA9200750ED0 /* IBDrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDrawable.swift; sourceTree = "<group>"; };
 		3FA85F7E22FD6F7C00734670 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		3FBA6A69233BA87D00CF7BA1 /* NSAttributedString+Attachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Attachment.swift"; sourceTree = "<group>"; };
 		3FF3000F22F425B700007A1E /* Extend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF3001222F425B700007A1E /* extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = extend.h; sourceTree = "<group>"; };
 		3FF3001322F425B700007A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				3FA3188E2303F73300C71245 /* CharacterSet+Sets.swift */,
 				3FF3002622F4278000007A1E /* String+Regex.swift */,
 				3FA3189C23044AE800C71245 /* String+Separated.swift */,
+				3FBA6A69233BA87D00CF7BA1 /* NSAttributedString+Attachment.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				3FF3003E22F4278000007A1E /* String+Regex.swift in Sources */,
 				3FF3003D22F4278000007A1E /* UINavigationItem+BackTitle.swift in Sources */,
 				3F96892222F83C2400781E72 /* UIView+Shadow.swift in Sources */,
+				3FBA6A6A233BA87D00CF7BA1 /* NSAttributedString+Attachment.swift in Sources */,
 				3FF3004222F4278000007A1E /* NibView.swift in Sources */,
 				3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */,
 				3F96890F22F81C4500781E72 /* GradientDirection.swift in Sources */,
