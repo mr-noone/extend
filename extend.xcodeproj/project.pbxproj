@@ -12,6 +12,7 @@
 		14A58D1B230C29890068EC35 /* UICollectionView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A58D1A230C29890068EC35 /* UICollectionView+Dequeue.swift */; };
 		3F3BC0AC2338D14C0029BEB0 /* CGRect+Offsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3BC0AB2338D14C0029BEB0 /* CGRect+Offsets.swift */; };
 		3F3BC0B22338F9160029BEB0 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3BC0B12338F9160029BEB0 /* TextView.swift */; };
+		3F9417F32344EC7D00AAEF11 /* Kindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9417F22344EC7D00AAEF11 /* Kindable.swift */; };
 		3F96890D22F81C3000781E72 /* GradienType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96890C22F81C3000781E72 /* GradienType.swift */; };
 		3F96890F22F81C4500781E72 /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96890E22F81C4500781E72 /* GradientDirection.swift */; };
 		3F96891122F81C5E00781E72 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96891022F81C5E00781E72 /* Gradient.swift */; };
@@ -54,6 +55,7 @@
 		14A58D1A230C29890068EC35 /* UICollectionView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeue.swift"; sourceTree = "<group>"; };
 		3F3BC0AB2338D14C0029BEB0 /* CGRect+Offsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Offsets.swift"; sourceTree = "<group>"; };
 		3F3BC0B12338F9160029BEB0 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		3F9417F22344EC7D00AAEF11 /* Kindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kindable.swift; sourceTree = "<group>"; };
 		3F96890C22F81C3000781E72 /* GradienType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradienType.swift; sourceTree = "<group>"; };
 		3F96890E22F81C4500781E72 /* GradientDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDirection.swift; sourceTree = "<group>"; };
 		3F96891022F81C5E00781E72 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				3FF3003622F4278000007A1E /* NibLoadable.swift */,
 				3FF3003422F4278000007A1E /* NibRepresentable.swift */,
 				3FF3003522F4278000007A1E /* Reusable.swift */,
+				3F9417F22344EC7D00AAEF11 /* Kindable.swift */,
 				143677A22320002400AE58AB /* Then.swift */,
 				3F96BE202333B13B00AB9282 /* ClosureAction.swift */,
 				3F96BE222333B16400AB9282 /* Section.swift */,
@@ -376,6 +379,7 @@
 				3F96BE252333C4FE00AB9282 /* UIImage+Color.swift in Sources */,
 				3FBA6A67233B7BEC00CF7BA1 /* ClosureAction.swift in Sources */,
 				3F96891F22F8253700781E72 /* UITableView+Dequeue.swift in Sources */,
+				3F9417F32344EC7D00AAEF11 /* Kindable.swift in Sources */,
 				3FF3004022F4278000007A1E /* SeparatorView.swift in Sources */,
 				3FA3189D23044AE800C71245 /* String+Separated.swift in Sources */,
 				3FF3004622F4278000007A1E /* Reusable.swift in Sources */,
