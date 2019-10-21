@@ -30,7 +30,6 @@ open class CodeTextField: NibControl, UITextInputTraits {
       stackView.alignment = .fill
       stackView.distribution = .fillEqually
       stackView.spacing = 8
-      stackView.addGestureRecognizer(tapGestureRecognition)
     }
   }
   
@@ -97,6 +96,7 @@ open class CodeTextField: NibControl, UITextInputTraits {
   open override func viewDidInit() {
     super.viewDidInit()
     updateCharacterViews()
+    addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTap(_:))))
   }
   
   // MARK: - Responder handlers
@@ -143,13 +143,6 @@ open class CodeTextField: NibControl, UITextInputTraits {
 
 private extension CodeTextField {
   // MARK: - Properties
-  
-  private var tapGestureRecognition: UITapGestureRecognizer {
-    get {
-      let tap = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
-      return tap
-    }
-  }
   
   private var menu: UIMenuController {
     get {
