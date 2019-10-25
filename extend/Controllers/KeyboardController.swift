@@ -8,31 +8,28 @@
 
 import UIKit
 
-@objc public protocol KeyboardControllerDelegate {
-  @objc optional func keyboardWillShow(_ userInfo: [AnyHashable : Any])
-  @objc optional func keyboardWillHide(_ userInfo: [AnyHashable : Any])
-  @objc optional func keyboardDidShow(_ userInfo: [AnyHashable : Any])
-  @objc optional func keyboardDidHide(_ userInfo: [AnyHashable : Any])
+public protocol KeyboardControllerDelegate: AnyObject {
+  func keyboardWillShow(_ userInfo: [AnyHashable : Any])
+  func keyboardWillHide(_ userInfo: [AnyHashable : Any])
+  func keyboardDidShow(_ userInfo: [AnyHashable : Any])
+  func keyboardDidHide(_ userInfo: [AnyHashable : Any])
 }
 
-public class KeyboardController: NSObject {
-  // MARK: - Outlets
+open class KeyboardController: Then {
+  // MARK: - Public properties
   
-  @IBOutlet public weak var scrollView: UIScrollView? {
+  open weak var delegate: KeyboardControllerDelegate?
+  open weak var scrollView: UIScrollView? {
     didSet { defaultInset = scrollView?.contentInset ?? .zero }
   }
   
-  @IBOutlet public weak var delegate: KeyboardControllerDelegate?
-  
-  // MARK: - Properties
+  // MARK: - Private properties
   
   private var defaultInset: UIEdgeInsets = .zero
   
-  // MARK: - Lifecycle
+  // MARK: - Inits
   
-  public override init() {
-    super.init()
-    
+  public init() {
     let sel = #selector(keyboardNotification(_:))
     let center = NotificationCenter.default
     center.addObserver(self, selector: sel, name: UIView.keyboardWillShowNotification, object: nil)
@@ -54,17 +51,17 @@ public class KeyboardController: NSObject {
     
     switch notification.name {
     case UIView.keyboardWillShowNotification:
-      delegate?.keyboardWillShow?(userInfo)
+      delegate?.keyboardWillShow(userInfo)
       let frame = (userInfo[UIView.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue ?? .zero
       let offset = (scrollView?.window?.frame.height ?? 0) - (scrollView?.frame.maxY ?? 0)
       inset.bottom = frame.height - offset
     case UIView.keyboardWillHideNotification:
-      delegate?.keyboardWillHide?(userInfo)
+      delegate?.keyboardWillHide(userInfo)
       inset = defaultInset
     case UIView.keyboardDidShowNotification:
-      delegate?.keyboardDidShow?(userInfo)
+      delegate?.keyboardDidShow(userInfo)
     case UIView.keyboardDidHideNotification:
-      delegate?.keyboardDidHide?(userInfo)
+      delegate?.keyboardDidHide(userInfo)
     default:
       return
     }
