@@ -23,4 +23,8 @@ public extension Array where Element: Section {
     get { return self[indexPath.section].items[indexPath.row] }
     set { self[indexPath.section].items[indexPath.row] = newValue }
   }
+  
+  func countOfItems(in section: Int) -> Int {
+    return self[section].items.count
+  }
 }
