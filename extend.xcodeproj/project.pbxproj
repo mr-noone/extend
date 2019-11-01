@@ -43,6 +43,9 @@
 		3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003622F4278000007A1E /* NibLoadable.swift */; };
 		3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */; };
 		3FFEC816233A12FF0080DF45 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */; };
+		E212A999236C6D2500A9E3EF /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A998236C6D2500A9E3EF /* UIImage+Blur.swift */; };
+		E212A99B236C6D5800A9E3EF /* UIWindow+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A99A236C6D5800A9E3EF /* UIWindow+Capture.swift */; };
+		E212A99D236C6DE100A9E3EF /* UIImage+TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A99C236C6DE100A9E3EF /* UIImage+TintColor.swift */; };
 		E2B7C4682302B71A0033E8D6 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7C4672302B71A0033E8D6 /* CharacterView.swift */; };
 		E2B7C46A2302B72A0033E8D6 /* CharacterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B7C4692302B72A0033E8D6 /* CharacterView.xib */; };
 		E2B7C46C2302C47B0033E8D6 /* CodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7C46B2302C47B0033E8D6 /* CodeTextField.swift */; };
@@ -91,6 +94,9 @@
 		3FF3003622F4278000007A1E /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
+		E212A998236C6D2500A9E3EF /* UIImage+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
+		E212A99A236C6D5800A9E3EF /* UIWindow+Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Capture.swift"; sourceTree = "<group>"; };
+		E212A99C236C6DE100A9E3EF /* UIImage+TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TintColor.swift"; sourceTree = "<group>"; };
 		E2B7C4672302B71A0033E8D6 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		E2B7C4692302B72A0033E8D6 /* CharacterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterView.xib; sourceTree = "<group>"; };
 		E2B7C46B2302C47B0033E8D6 /* CodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
@@ -189,6 +195,9 @@
 				3FA85F7E22FD6F7C00734670 /* UIView+Border.swift */,
 				3FF3002322F4278000007A1E /* UIView+Round.swift */,
 				3F96892122F83C2400781E72 /* UIView+Shadow.swift */,
+				E212A998236C6D2500A9E3EF /* UIImage+Blur.swift */,
+				E212A99A236C6D5800A9E3EF /* UIWindow+Capture.swift */,
+				E212A99C236C6DE100A9E3EF /* UIImage+TintColor.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -385,6 +394,7 @@
 				3FA3189D23044AE800C71245 /* String+Separated.swift in Sources */,
 				3FF3004622F4278000007A1E /* Reusable.swift in Sources */,
 				3F3BC0AC2338D14C0029BEB0 /* CGRect+Offsets.swift in Sources */,
+				E212A99D236C6DE100A9E3EF /* UIImage+TintColor.swift in Sources */,
 				3FA3188F2303F73300C71245 /* CharacterSet+Sets.swift in Sources */,
 				3FF3003B22F4278000007A1E /* UIColor+Hex.swift in Sources */,
 				143677A32320002400AE58AB /* Then.swift in Sources */,
@@ -409,10 +419,12 @@
 				3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */,
 				3F96890F22F81C4500781E72 /* GradientDirection.swift in Sources */,
 				3FFEC816233A12FF0080DF45 /* UITextView+NumberOfLines.swift in Sources */,
+				E212A99B236C6D5800A9E3EF /* UIWindow+Capture.swift in Sources */,
 				3FF3004522F4278000007A1E /* NibRepresentable.swift in Sources */,
 				14A58D1B230C29890068EC35 /* UICollectionView+Dequeue.swift in Sources */,
 				3FA5EE2C22FDAA9200750ED0 /* IBDrawable.swift in Sources */,
 				3FF3004422F4278000007A1E /* GradientView.swift in Sources */,
+				E212A999236C6D2500A9E3EF /* UIImage+Blur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
