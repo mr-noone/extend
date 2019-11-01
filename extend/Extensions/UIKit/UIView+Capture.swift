@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIWindow {
+public extension UIView {
   func capture() -> UIImage? {
     UIGraphicsBeginImageContextWithOptions(self.frame.size, self.isOpaque, UIScreen.main.scale)
     self.layer.render(in: UIGraphicsGetCurrentContext()!)

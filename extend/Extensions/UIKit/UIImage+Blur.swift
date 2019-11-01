@@ -12,10 +12,7 @@ import Accelerate
 public extension UIImage {
   func blur(radius: Float) -> UIImage {
     let size = self.size
-    guard radius > 0 else {
-      return self
-    }
-    guard let sourceCGImage: CGImage = self.cgImage else {
+    guard radius > 0, let sourceCGImage: CGImage = self.cgImage else {
       return self
     }
 

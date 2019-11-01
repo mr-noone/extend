@@ -44,7 +44,7 @@
 		3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */; };
 		3FFEC816233A12FF0080DF45 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */; };
 		E212A999236C6D2500A9E3EF /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A998236C6D2500A9E3EF /* UIImage+Blur.swift */; };
-		E212A99B236C6D5800A9E3EF /* UIWindow+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A99A236C6D5800A9E3EF /* UIWindow+Capture.swift */; };
+		E212A99B236C6D5800A9E3EF /* UIView+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A99A236C6D5800A9E3EF /* UIView+Capture.swift */; };
 		E212A99D236C6DE100A9E3EF /* UIImage+TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A99C236C6DE100A9E3EF /* UIImage+TintColor.swift */; };
 		E2B7C4682302B71A0033E8D6 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7C4672302B71A0033E8D6 /* CharacterView.swift */; };
 		E2B7C46A2302B72A0033E8D6 /* CharacterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B7C4692302B72A0033E8D6 /* CharacterView.xib */; };
@@ -95,7 +95,7 @@
 		3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
 		E212A998236C6D2500A9E3EF /* UIImage+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
-		E212A99A236C6D5800A9E3EF /* UIWindow+Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Capture.swift"; sourceTree = "<group>"; };
+		E212A99A236C6D5800A9E3EF /* UIView+Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Capture.swift"; sourceTree = "<group>"; };
 		E212A99C236C6DE100A9E3EF /* UIImage+TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TintColor.swift"; sourceTree = "<group>"; };
 		E2B7C4672302B71A0033E8D6 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		E2B7C4692302B72A0033E8D6 /* CharacterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterView.xib; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 				3FF3002322F4278000007A1E /* UIView+Round.swift */,
 				3F96892122F83C2400781E72 /* UIView+Shadow.swift */,
 				E212A998236C6D2500A9E3EF /* UIImage+Blur.swift */,
-				E212A99A236C6D5800A9E3EF /* UIWindow+Capture.swift */,
+				E212A99A236C6D5800A9E3EF /* UIView+Capture.swift */,
 				E212A99C236C6DE100A9E3EF /* UIImage+TintColor.swift */,
 			);
 			path = UIKit;
@@ -419,7 +419,7 @@
 				3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */,
 				3F96890F22F81C4500781E72 /* GradientDirection.swift in Sources */,
 				3FFEC816233A12FF0080DF45 /* UITextView+NumberOfLines.swift in Sources */,
-				E212A99B236C6D5800A9E3EF /* UIWindow+Capture.swift in Sources */,
+				E212A99B236C6D5800A9E3EF /* UIView+Capture.swift in Sources */,
 				3FF3004522F4278000007A1E /* NibRepresentable.swift in Sources */,
 				14A58D1B230C29890068EC35 /* UICollectionView+Dequeue.swift in Sources */,
 				3FA5EE2C22FDAA9200750ED0 /* IBDrawable.swift in Sources */,
