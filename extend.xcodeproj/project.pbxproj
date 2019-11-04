@@ -43,6 +43,9 @@
 		3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003622F4278000007A1E /* NibLoadable.swift */; };
 		3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */; };
 		3FFEC816233A12FF0080DF45 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */; };
+		4B7B6E562370544F00423BC7 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B6E552370544F00423BC7 /* Diff.swift */; };
+		4B7B6E5A2370666600423BC7 /* UITableView+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B6E592370666600423BC7 /* UITableView+Diff.swift */; };
+		4BDBCD1A23703C55003AF038 /* Collection+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBCD1923703C55003AF038 /* Collection+Diff.swift */; };
 		E212A999236C6D2500A9E3EF /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A998236C6D2500A9E3EF /* UIImage+Blur.swift */; };
 		E212A99B236C6D5800A9E3EF /* UIView+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A99A236C6D5800A9E3EF /* UIView+Capture.swift */; };
 		E212A99D236C6DE100A9E3EF /* UIImage+TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212A99C236C6DE100A9E3EF /* UIImage+TintColor.swift */; };
@@ -94,6 +97,9 @@
 		3FF3003622F4278000007A1E /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
+		4B7B6E552370544F00423BC7 /* Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
+		4B7B6E592370666600423BC7 /* UITableView+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Diff.swift"; sourceTree = "<group>"; };
+		4BDBCD1923703C55003AF038 /* Collection+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Diff.swift"; sourceTree = "<group>"; };
 		E212A998236C6D2500A9E3EF /* UIImage+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
 		E212A99A236C6D5800A9E3EF /* UIView+Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Capture.swift"; sourceTree = "<group>"; };
 		E212A99C236C6DE100A9E3EF /* UIImage+TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TintColor.swift"; sourceTree = "<group>"; };
@@ -152,8 +158,9 @@
 				3FF3001222F425B700007A1E /* extend.h */,
 				3FF3003322F4278000007A1E /* Protocols */,
 				3FF3002022F4278000007A1E /* Extensions */,
-				3FF3002722F4278000007A1E /* Controllers */,
+				4B7B6E542370543E00423BC7 /* Models */,
 				3FF3002922F4278000007A1E /* Views */,
+				3FF3002722F4278000007A1E /* Controllers */,
 				3FF3001B22F4261100007A1E /* Support Files */,
 			);
 			path = extend;
@@ -187,17 +194,18 @@
 				14A58D1A230C29890068EC35 /* UICollectionView+Dequeue.swift */,
 				14A58D18230C29700068EC35 /* UICollectionView+Register.swift */,
 				3FF3002222F4278000007A1E /* UIColor+Hex.swift */,
+				E212A998236C6D2500A9E3EF /* UIImage+Blur.swift */,
 				3F96BE242333C4FE00AB9282 /* UIImage+Color.swift */,
+				E212A99C236C6DE100A9E3EF /* UIImage+TintColor.swift */,
 				3FF3002422F4278000007A1E /* UINavigationItem+BackTitle.swift */,
 				3F96891E22F8253700781E72 /* UITableView+Dequeue.swift */,
+				4B7B6E592370666600423BC7 /* UITableView+Diff.swift */,
 				3F96891C22F8235900781E72 /* UITableView+Register.swift */,
 				3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */,
 				3FA85F7E22FD6F7C00734670 /* UIView+Border.swift */,
+				E212A99A236C6D5800A9E3EF /* UIView+Capture.swift */,
 				3FF3002322F4278000007A1E /* UIView+Round.swift */,
 				3F96892122F83C2400781E72 /* UIView+Shadow.swift */,
-				E212A998236C6D2500A9E3EF /* UIImage+Blur.swift */,
-				E212A99A236C6D5800A9E3EF /* UIView+Capture.swift */,
-				E212A99C236C6DE100A9E3EF /* UIImage+TintColor.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -206,9 +214,10 @@
 			isa = PBXGroup;
 			children = (
 				3FA3188E2303F73300C71245 /* CharacterSet+Sets.swift */,
+				4BDBCD1923703C55003AF038 /* Collection+Diff.swift */,
+				3FBA6A69233BA87D00CF7BA1 /* NSAttributedString+Attachment.swift */,
 				3FF3002622F4278000007A1E /* String+Regex.swift */,
 				3FA3189C23044AE800C71245 /* String+Separated.swift */,
-				3FBA6A69233BA87D00CF7BA1 /* NSAttributedString+Attachment.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -291,6 +300,14 @@
 				3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */,
 			);
 			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		4B7B6E542370543E00423BC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B7B6E552370544F00423BC7 /* Diff.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E2B7C4662302B6F80033E8D6 /* CodeTextField */ = {
@@ -400,6 +417,7 @@
 				143677A32320002400AE58AB /* Then.swift in Sources */,
 				E2B7C4682302B71A0033E8D6 /* CharacterView.swift in Sources */,
 				3FF3003C22F4278000007A1E /* UIView+Round.swift in Sources */,
+				4BDBCD1A23703C55003AF038 /* Collection+Diff.swift in Sources */,
 				3F3BC0B22338F9160029BEB0 /* TextView.swift in Sources */,
 				3F96890D22F81C3000781E72 /* GradienType.swift in Sources */,
 				3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */,
@@ -409,6 +427,7 @@
 				3F96BE232333B16400AB9282 /* Section.swift in Sources */,
 				3F96891D22F8235900781E72 /* UITableView+Register.swift in Sources */,
 				3FF3003F22F4278000007A1E /* KeyboardController.swift in Sources */,
+				4B7B6E562370544F00423BC7 /* Diff.swift in Sources */,
 				14A58D19230C29700068EC35 /* UICollectionView+Register.swift in Sources */,
 				E2B7C46C2302C47B0033E8D6 /* CodeTextField.swift in Sources */,
 				3FF3003E22F4278000007A1E /* String+Regex.swift in Sources */,
@@ -418,6 +437,7 @@
 				3FF3004222F4278000007A1E /* NibView.swift in Sources */,
 				3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */,
 				3F96890F22F81C4500781E72 /* GradientDirection.swift in Sources */,
+				4B7B6E5A2370666600423BC7 /* UITableView+Diff.swift in Sources */,
 				3FFEC816233A12FF0080DF45 /* UITextView+NumberOfLines.swift in Sources */,
 				E212A99B236C6D5800A9E3EF /* UIView+Capture.swift in Sources */,
 				3FF3004522F4278000007A1E /* NibRepresentable.swift in Sources */,
