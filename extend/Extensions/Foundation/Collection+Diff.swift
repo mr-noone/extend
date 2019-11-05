@@ -74,6 +74,11 @@ public extension Collection where Element: Any {
       case 0 where i == iCount:
         diff.append(.insert(index: jIndex, element: other[jIndex]))
         j += 1
+      case 0 where buffer[j + 1][i + 1] == 0:
+        diff.append(.remove(index: iIndex, element: self[iIndex]))
+        diff.append(.insert(index: jIndex, element: other[jIndex]))
+        i += 1
+        j += 1
       case _ where buffer[j + 1][i + 1] == 0:
         i += 1
         j += 1
