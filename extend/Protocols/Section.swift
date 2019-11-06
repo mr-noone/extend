@@ -27,4 +27,29 @@ public extension Array where Element: Section {
   func countOfItems(in section: Int) -> Int {
     return self[section].items.count
   }
+  
+  func firstIndexPath(where predicate: (Element.Item) throws -> Bool) rethrows -> IndexPath? {
+    for section in 0..<count {
+      for item in 0..<countOfItems(in: section) {
+        if try predicate(self[section].items[item]) {
+          return IndexPath(item: item, section: section)
+        }
+      }
+    }
+    return nil
+  }
+  
+  mutating func append(_ newElement: Element.Item, in section: Int) {
+    self[section].items.append(newElement)
+  }
+  
+  mutating func append(_ newElement: Element.Item) {
+    if count > 0 {
+      self[count - 1].items.append(newElement)
+    }
+  }
+  
+  mutating func remove(at indexPath: IndexPath) {
+    self[indexPath.section].items.remove(at: indexPath.row)
+  }
 }
