@@ -39,6 +39,11 @@ public extension Array where Element: Section {
     return nil
   }
   
+  public func first(where predicate: (Element.Item) throws -> Bool) rethrows -> Element.Item? {
+    guard let indexPath = try firstIndexPath(where: predicate) else { return nil }
+    return self[indexPath]
+  }
+  
   mutating func append(_ newElement: Element.Item, in section: Int) {
     self[section].items.append(newElement)
   }
