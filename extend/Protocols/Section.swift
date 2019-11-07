@@ -54,6 +54,14 @@ public extension Array where Element: Section {
     }
   }
   
+  mutating func insert(_ newElement: Element.Item, at section: Int) {
+    self[section].items.append(newElement)
+  }
+  
+  mutating func insert(_ newElement: Element.Item, at indexPath: IndexPath) {
+    self[indexPath.section].items.insert(newElement, at: indexPath.row)
+  }
+  
   mutating func remove(at indexPath: IndexPath) {
     self[indexPath.section].items.remove(at: indexPath.row)
   }
