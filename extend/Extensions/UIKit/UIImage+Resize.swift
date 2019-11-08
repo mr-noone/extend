@@ -13,7 +13,7 @@ public extension UIImage {
   func resize(new size: CGSize) -> UIImage? {
     defer { UIGraphicsEndImageContext() }
     UIGraphicsBeginImageContextWithOptions(size, true, 1)
-    draw(in: CGRect(origin: .zero, size: size))
+    draw(in: CGRect(origin: .zero, size: size).integral)
     return UIGraphicsGetImageFromCurrentImageContext()
   }
   
