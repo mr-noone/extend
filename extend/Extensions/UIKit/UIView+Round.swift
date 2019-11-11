@@ -27,4 +27,8 @@ public extension UIView {
       self.layer.mask = mask
     }
   }
+  
+  func round(corners: UIRectCorner = .allCorners) {
+    round(corners: corners, radius: min(frame.width, frame.height) / 2)
+  }
 }
