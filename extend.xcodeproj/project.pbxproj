@@ -43,6 +43,8 @@
 		3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003622F4278000007A1E /* NibLoadable.swift */; };
 		3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */; };
 		3FFEC816233A12FF0080DF45 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */; };
+		4B70A8B82383ED5100A8195D /* Data+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B70A8B72383ED5100A8195D /* Data+Hash.swift */; };
+		4B70A8BA2383EE6100A8195D /* Array+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B70A8B92383EE6100A8195D /* Array+Hex.swift */; };
 		4B7B6E562370544F00423BC7 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B6E552370544F00423BC7 /* Diff.swift */; };
 		4B7B6E5A2370666600423BC7 /* UITableView+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B6E592370666600423BC7 /* UITableView+Diff.swift */; };
 		4B7B6E802374536800423BC7 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B6E7F2374536800423BC7 /* UIImage+Resize.swift */; };
@@ -98,6 +100,8 @@
 		3FF3003622F4278000007A1E /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
+		4B70A8B72383ED5100A8195D /* Data+Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Hash.swift"; sourceTree = "<group>"; };
+		4B70A8B92383EE6100A8195D /* Array+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Hex.swift"; sourceTree = "<group>"; };
 		4B7B6E552370544F00423BC7 /* Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
 		4B7B6E592370666600423BC7 /* UITableView+Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Diff.swift"; sourceTree = "<group>"; };
 		4B7B6E7F2374536800423BC7 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
@@ -216,8 +220,10 @@
 		3FF3002522F4278000007A1E /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				4B70A8B92383EE6100A8195D /* Array+Hex.swift */,
 				3FA3188E2303F73300C71245 /* CharacterSet+Sets.swift */,
 				4BDBCD1923703C55003AF038 /* Collection+Diff.swift */,
+				4B70A8B72383ED5100A8195D /* Data+Hash.swift */,
 				3FBA6A69233BA87D00CF7BA1 /* NSAttributedString+Attachment.swift */,
 				3FF3002622F4278000007A1E /* String+Regex.swift */,
 				3FA3189C23044AE800C71245 /* String+Separated.swift */,
@@ -409,6 +415,7 @@
 				3F96BE252333C4FE00AB9282 /* UIImage+Color.swift in Sources */,
 				3FBA6A67233B7BEC00CF7BA1 /* ClosureAction.swift in Sources */,
 				3F96891F22F8253700781E72 /* UITableView+Dequeue.swift in Sources */,
+				4B70A8BA2383EE6100A8195D /* Array+Hex.swift in Sources */,
 				3F9417F32344EC7D00AAEF11 /* Kindable.swift in Sources */,
 				3FF3004022F4278000007A1E /* SeparatorView.swift in Sources */,
 				3FA3189D23044AE800C71245 /* String+Separated.swift in Sources */,
@@ -421,6 +428,7 @@
 				E2B7C4682302B71A0033E8D6 /* CharacterView.swift in Sources */,
 				3FF3003C22F4278000007A1E /* UIView+Round.swift in Sources */,
 				4BDBCD1A23703C55003AF038 /* Collection+Diff.swift in Sources */,
+				4B70A8B82383ED5100A8195D /* Data+Hash.swift in Sources */,
 				3F3BC0B22338F9160029BEB0 /* TextView.swift in Sources */,
 				3F96890D22F81C3000781E72 /* GradienType.swift in Sources */,
 				3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */,
