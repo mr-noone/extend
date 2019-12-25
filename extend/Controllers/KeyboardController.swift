@@ -15,6 +15,12 @@ public protocol KeyboardControllerDelegate: AnyObject {
   func keyboardDidHide(_ userInfo: [AnyHashable : Any])
 }
 
+extension UIView {
+  var globalFrame: CGRect {
+    return superview?.convert(frame, to:  nil) ?? frame
+  }
+}
+
 open class KeyboardController: Then {
   // MARK: - Public properties
   
@@ -53,7 +59,7 @@ open class KeyboardController: Then {
     case UIView.keyboardWillShowNotification:
       delegate?.keyboardWillShow(userInfo)
       let frame = (userInfo[UIView.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue ?? .zero
-      let offset = (scrollView?.window?.frame.height ?? 0) - (scrollView?.frame.maxY ?? 0)
+      let offset = (scrollView?.window?.frame.height ?? 0) - (scrollView?.globalFrame.maxY ?? 0)
       inset.bottom = frame.height - offset
     case UIView.keyboardWillHideNotification:
       delegate?.keyboardWillHide(userInfo)
