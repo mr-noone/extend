@@ -43,6 +43,7 @@
 		3FF3004722F4278000007A1E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003622F4278000007A1E /* NibLoadable.swift */; };
 		3FF3004822F4278000007A1E /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */; };
 		3FFEC816233A12FF0080DF45 /* UITextView+NumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */; };
+		4B47A4D123B6070F004D15AE /* Array+Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B47A4D023B6070F004D15AE /* Array+Unique.swift */; };
 		4B532A6623B104CA00D9C1D1 /* CountFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B532A6523B104CA00D9C1D1 /* CountFormatter.swift */; };
 		4B70A8B82383ED5100A8195D /* Data+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B70A8B72383ED5100A8195D /* Data+Hash.swift */; };
 		4B70A8BA2383EE6100A8195D /* Array+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B70A8B92383EE6100A8195D /* Array+Hex.swift */; };
@@ -102,6 +103,7 @@
 		3FF3003622F4278000007A1E /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		3FF3003A22F4278000007A1E /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		3FFEC815233A12FF0080DF45 /* UITextView+NumberOfLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+NumberOfLines.swift"; sourceTree = "<group>"; };
+		4B47A4D023B6070F004D15AE /* Array+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Unique.swift"; sourceTree = "<group>"; };
 		4B532A6523B104CA00D9C1D1 /* CountFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountFormatter.swift; sourceTree = "<group>"; };
 		4B70A8B72383ED5100A8195D /* Data+Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Hash.swift"; sourceTree = "<group>"; };
 		4B70A8B92383EE6100A8195D /* Array+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Hex.swift"; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				4B70A8B92383EE6100A8195D /* Array+Hex.swift */,
+				4B47A4D023B6070F004D15AE /* Array+Unique.swift */,
 				3FA3188E2303F73300C71245 /* CharacterSet+Sets.swift */,
 				4BDBCD1923703C55003AF038 /* Collection+Diff.swift */,
 				4B70A8B72383ED5100A8195D /* Data+Hash.swift */,
@@ -464,6 +467,7 @@
 				3FF3003F22F4278000007A1E /* KeyboardController.swift in Sources */,
 				4B7B6E802374536800423BC7 /* UIImage+Resize.swift in Sources */,
 				4B7B6E562370544F00423BC7 /* Diff.swift in Sources */,
+				4B47A4D123B6070F004D15AE /* Array+Unique.swift in Sources */,
 				14A58D19230C29700068EC35 /* UICollectionView+Register.swift in Sources */,
 				E2B7C46C2302C47B0033E8D6 /* CodeTextField.swift in Sources */,
 				3FF3003E22F4278000007A1E /* String+Regex.swift in Sources */,
