@@ -65,4 +65,14 @@ public extension Array where Element: Section {
   mutating func remove(at indexPath: IndexPath) {
     self[indexPath.section].items.remove(at: indexPath.row)
   }
+  
+  mutating func removeAll(where shouldBeRemoved: (Element.Item) throws -> Bool) rethrows {
+    for section in (0..<count).reversed() {
+      for item in (0..<countOfItems(in: section)).reversed() {
+        if try shouldBeRemoved(self[section].items[item]) {
+          self[section].items.remove(at: item)
+        }
+      }
+    }
+  }
 }

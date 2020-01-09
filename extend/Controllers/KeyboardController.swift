@@ -17,7 +17,7 @@ public protocol KeyboardControllerDelegate: AnyObject {
 
 extension UIView {
   var globalFrame: CGRect {
-    return superview?.convert(frame, to:  nil) ?? frame
+    return superview?.convert(frame, to: nil) ?? frame
   }
 }
 
